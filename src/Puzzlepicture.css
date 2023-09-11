@@ -1,0 +1,92 @@
+/* src/Puzzle.css */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.puzzle-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 520px;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 10px solid #a13232;
+  
+}
+
+.puzzle-piece {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+  border: 5px solid rgb(255, 218, 218);
+}
+
+.puzzle-piece.empty {
+  background-color: #fff;
+}
+
+.title {
+  padding: 10px;
+  font-size: 30px;  
+  display: flex;
+  
+}
+
+.new_round{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+  border: 5px solid #a13232;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: #a13232;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family:'Oswald', cursive;
+}
+.new_round:hover{
+  background-color: #fff;
+  color: black;
+  font-family:'Oswald', cursive;
+}
+.game{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+.counter{
+  display: grid;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  height: auto;
+  width: auto;
+  
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  gap: 10px;
+}
+.stat{
+  margin-top: 180px;
+
+  border: solid #a13232 hidden ;
+}
+.header{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+}
